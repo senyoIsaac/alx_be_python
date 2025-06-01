@@ -31,4 +31,4 @@ else:
         reminder = f"Reminder: '{task}' is a {priority_msg}, but no immediate deadline."
 
 # Print the final reminder
-print("\n" + reminder)
+print(reminder)
