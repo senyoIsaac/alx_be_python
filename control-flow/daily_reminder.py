@@ -24,11 +24,11 @@ match priority:
 # Add time sensitivity
 if time_bound == "yes":
     reminder = f"Reminder: '{task}' is a {priority_msg} that requires immediate attention today!"
+
+elif priority == "low":
+     reminder = f"Note: '{task}' is a {priority_msg}. Consider completing it when you have free time."
 else:
-    if priority == "low":
-        reminder = f"Note: '{task}' is a {priority_msg}. Consider completing it when you have free time."
-    else:
-        reminder = f"Reminder: '{task}' is a {priority_msg}, but no immediate deadline."
+     reminder = f"Reminder: '{task}' is a {priority_msg}, but no immediate deadline."
 
 # Print the final reminder
 print(reminder)
