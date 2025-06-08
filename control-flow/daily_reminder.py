@@ -27,5 +27,13 @@ if time_bound == "yes":
 
 elif priority == "low":
        print(f"Note: '{task}' is a {priority_msg}. Consider completing it when you have free time.")
-else:
-    print(f"Reminder: '{task}' is a {priority_msg}, but no immediate deadline.")
+     print(f"Reminder: '{task}' is a {priority_msg} that requires immediate attention today!")
+
+
+    if priority == "low":
+        reminder = f"Note: '{task}' is a {priority_msg}. Consider completing it when you have free time."
+    else:
+        reminder = f"Reminder: '{task}' is a {priority_msg}, but no immediate deadline."
+
+# Print the final reminder
+print("\n" + reminder)
