@@ -18,6 +18,7 @@ class BankAccount:
         else:
             print("Insufficient balance or invalid amount")
 
+"""
 # Using the class
 account = BankAccount("Alice", 1000)
 
@@ -32,3 +33,4 @@ account.deposit(500)
 print(account.get_balance())  # ✅ 1500
 
 account.withdraw(2000)  # ❌ Insufficient balance
+"""
