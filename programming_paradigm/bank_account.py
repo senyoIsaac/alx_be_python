@@ -1,27 +1,19 @@
 class BankAccount:
     def __init__(self, balance):
-        self.balance = balance  # private attribute
+        self.balance = balance
 
-    # Getter method
     def display_balance(self):
         print(f"Current Balance: ${self.balance}")
-        # Alternatively, could return the balance:
-        # return self.balance
 
-    # Setter method with validation
     def deposit(self, amount):
         if amount > 0:
             self.balance += amount
-            return True
-        return False
 
     def withdraw(self, amount):
-        if amount > 0 and amount <= self.balance:
-            self.balance -= amount
-            return True
-        else:
+        if amount > self.balance:
             print("Insufficient funds.")
-       
+        else:
+            self.balance -= amount
 
 """
 # Using the class
