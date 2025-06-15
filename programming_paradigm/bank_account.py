@@ -10,7 +10,7 @@ class BankAccount:
     # Setter method with validation
     def deposit(self, amount):
         if amount > 0:
-            self.__balance += amount
+            self.balance += amount
 
     def withdraw(self, amount):
         if 0 < amount <= self.balance:
