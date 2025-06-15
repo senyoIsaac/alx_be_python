@@ -6,7 +6,7 @@ class BankAccount:
     # Getter method
     def display_balance(self):
         #return self.balance
-        print(f"Current Balance: ${self.balance}")
+        print(f"Current Balance:${self.balance}")
     # Setter method with validation
     def deposit(self, amount):
         if amount > 0:
