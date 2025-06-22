@@ -4,7 +4,7 @@ class Book:
         self.author = author
 
     def __str__(self):
-        pass
+        return f"Book: {self.title} by {self.author}"
 
 
 class EBook(Book):
