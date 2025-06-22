@@ -13,7 +13,7 @@ class EBook(Book):
         self.file_size = file_size  # in KB
 
     def __str__(self):
-        return f"EBook: {self.title} by {self.author} ({self.file_size}KB)"
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 
 
 class PrintBook(Book):
@@ -22,7 +22,7 @@ class PrintBook(Book):
         self.page_count = page_count 
 
     def __str__(self):
-        return f"PrintBook: {self.title} by {self.author} ({self.page_count} pages)"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 
 class Library:
@@ -40,9 +40,8 @@ class Library:
             print("The library is empty.")
             return
             
-        print("Library Contents:")
-        for i, book in enumerate(self.books, 1):
-            print(f"{i}. {book}")
+        for book in self.books:
+            print(book)
 
 
 # Create a Library instance
